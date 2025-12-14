@@ -1,0 +1,18 @@
+package Conditional;
+
+import java.util.Scanner;
+
+public class Smallest {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int mini = Integer.MAX_VALUE;
+        for(int i = 0 ; i < n; i++){
+            int x = input.nextInt();
+            if(x <= mini){
+                mini = x;
+            }
+        }
+        System.out.println(mini);
+    }
+}
